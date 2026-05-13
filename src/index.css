@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --terracota: #C45A3B;
+  --navy: #1a365d;
+  --beige: #f5f0e6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.font-dmserif {
+  font-family: 'DM Serif Display', serif;
+}
+
+.text-terracota {
+  color: var(--terracota);
+}
+
+.bg-terracota {
+  background-color: var(--terracota);
+}
+
+.border-terracota {
+  border-color: var(--terracota);
+}
