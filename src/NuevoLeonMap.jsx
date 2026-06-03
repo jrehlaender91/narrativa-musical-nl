@@ -25,7 +25,8 @@ export default function NuevoLeonMap({ citiesData = [], width = 700, height = 50
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        fetch("/nuevo-leon.json")
+        // Usa BASE_URL de Vite para que funcione tanto local ("/") como GitHub Pages ("/narrativa-musical-nl/")
+        fetch(`${import.meta.env.BASE_URL}nuevo-leon.json`)
             .then((r) => r.json())
             .then(setGeoData)
             .catch((err) => console.error("Error loading map:", err));
